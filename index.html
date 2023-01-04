@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Todo</title>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="css/todo.css">
+   <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+   <div class="container">
+
+      <div class="header">Todo</div>
+
+      <div class="task_input">
+         <input type="text" id="task_input"/>
+         <button class="floatingActionButton add_task_button" onclick="addTask()">+</button>
+      </div>
+
+      <div class="tasks" id="task_container">
+      </div>
+      
+      <div class="popup">This application is made for Deep Thought as a learning project by Soham Saha from 4th to 5th January 2023
+          with Html,css and javascript.</div>
+   </div>
+   <script src="index.js"></script>
+   <script src="./js/TaskEnitiy.js"></script>
+   <script src="./js/TaskDAO.js"></script>
+   <script src="./js/Todo.js"></script>
+</body>
+</html>

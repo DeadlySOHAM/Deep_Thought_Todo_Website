@@ -1,0 +1,68 @@
+.container{
+   width:100%;
+   height: 100%;
+   display: flex ;
+   flex-direction: column ;
+   align-items: center ;
+}
+
+.header{
+   width: 100%;
+   text-align: left;
+   background-color: var(--mainColor);
+   color:#ffffff;
+   font-weight: bold ;
+   padding:0.5rem;
+   font-size: 2rem;
+   box-shadow: 0rem 0.0625rem 0.25rem -0.0625rem var(--shadowColor);
+}
+
+.add_task_button{
+   background-color: var(--greenSuccessColor);
+}
+
+.remove_task_button{
+   background-color:var(--redFailureColor);
+   color:white;
+}
+
+.task_input{
+   width:100%;
+   padding:5px;
+   display: flex;
+   flex-direction: row;
+   align-items: center ;
+   justify-content: space-around;
+}
+
+.task_input input{
+   height: 100%;
+   width:90%;
+}
+
+.tasks{
+   height: 100%;
+   width:100%;
+   padding:0.5rem;
+   overflow-y:auto;
+}
+
+.task{
+   width:calc(100%-2*0.5rem-2*0.5rem);
+   padding:0.5rem;
+   margin:0.5rem;
+   font-size: 1rem;
+   border-radius: 0.5rem;
+   background-color: var(--whiteBlue);
+   display: flex;
+   flex-direction: row ;
+   align-items: center ;
+   justify-content: space-around ;
+}
+
+.task_text{
+   width:80%;
+   word-wrap: break-word ;
+   word-break: keep-all;
+   background-color: inherit;
+}

@@ -1,0 +1,62 @@
+:root{
+   --mainColor : #0000FF;
+   --whiteBlue:#CCCCFF;
+   --backgroundDirtyWhite : #EEEEEE ;
+   --shadowColor: #BBBBFF;
+   --unselectableColor : #999999;
+   --greenSuccessColor:#00FF00;
+   --redFailureColor:#FF0000;
+}
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box ;
+   font-family: 'Roboto', sans-serif;
+   user-select: none ;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+body,html{
+   scroll-behavior: smooth ;
+   height: 100vh;
+   width: 100vw ;
+   overflow: hidden;
+   scrollbar-width: none;
+}
+
+::-webkit-scrollbar { display: none; }
+
+*{
+   background-color: var(--backgroundDirtyWhite);
+}
+
+input{
+   font-size: 1rem;
+   padding: 0.5rem;
+   border : 0.0625rem solid var(--mainColor);
+   border-radius : 5px;
+}
+
+input:focus{
+   border:0.125rem solid var(--mainColor);
+   outline: none;
+}
+
+
+.floatingActionButton{
+   width : 3rem;
+   height: 3rem;
+   font-size: 2rem;
+   outline:none;
+   border-width: 0;
+   border-radius: 50%;
+   box-shadow:  0rem 0.0625rem 0.25rem -0.0625rem ;
+   transition : 100ms;
+   opacity:0.8;
+}
+
+.floatingActionButton:active{
+   opacity: 1;
+}

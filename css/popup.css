@@ -1,0 +1,30 @@
+.popup{
+   height: 50%;
+   width: 50% ;
+   position:fixed;
+   top:25%;
+   left:25%;
+   margin:0.5rem;
+   padding:0.5rem;
+   background-color: white;
+   border-radius: 5px ;
+   animation:disappear 30s;
+   animation-fill-mode: forwards;
+   display: flex ;
+   flex-direction: column ;
+   align-items: center ;
+   justify-content: center;
+}
+
+@keyframes disappear {
+   0%{
+      opacity: 1;
+   }
+   99%{
+      opacity: 0.5;
+   }
+   to{
+      opacity: 0;
+      z-index: -1;
+   }
+}
